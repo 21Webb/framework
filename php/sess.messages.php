@@ -6,7 +6,7 @@ function msg($prefix, $message) {
 }
 
 function msgClear($msgs) {
-	if(!is_array($msgs)) { 
+	if(!is_array($msgs) || epmty($msgs)) { 
 		return FALSE;
 	}
 	if(count($msgs) > 0) {
